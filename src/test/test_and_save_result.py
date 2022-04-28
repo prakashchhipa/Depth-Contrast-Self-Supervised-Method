@@ -181,15 +181,15 @@ def test_trained_model(image_type = mbv_config.image_both,eval_result_path = mbv
     test_ref_image_file = None
     test_label_file = None
 
-    if dataset_portion == mbv_config.train:
+    if dataset_portion == "train":
         test_raw_image_file = fold_root + 'X_raw_train.npy'
         test_ref_image_file = fold_root + 'X_ref_train.npy'
         test_label_file = fold_root + 'Y_train.npy'
-    elif dataset_portion == mbv_config.test:
+    elif dataset_portion == "test":
         test_raw_image_file = fold_root + 'X_raw_test.npy'
         test_ref_image_file = fold_root + 'X_ref_test.npy'
         test_label_file = fold_root + 'Y_test.npy'
-    elif dataset_portion == mbv_config.val:
+    elif dataset_portion == "val":
         test_raw_image_file = fold_root + 'X_raw_val.npy'
         test_ref_image_file = fold_root + 'X_ref_val.npy'
         test_label_file = fold_root + 'Y_val.npy'
@@ -199,11 +199,11 @@ def test_trained_model(image_type = mbv_config.image_both,eval_result_path = mbv
     test_loader = DataLoader(test_dataset, batch_size = batch_size, shuffle=False, sampler=None)
     
     model = None
-    if model_name == mbv_config.EfficientNet_b2:
+    if model_name == "efficient":
         model = EfficientNet_Model()
-    elif model_name == mbv_config.DenseNet_121:
-        model = Densenet_Model(pretrained=True)
-    elif model_name == mbv_config.ResNext_50_32x4d:
+    elif model_name == "densenet":
+        model = Densenet_Model()
+    elif model_name == "resnext":
         model = Resnext_Model()
         
     model.load_state_dict(torch.load(pretrained_weights_file_path))
@@ -216,13 +216,24 @@ def test_trained_model(image_type = mbv_config.image_both,eval_result_path = mbv
 
 if __name__ == "__main__":
 
+    parser = argparse.ArgumentParser(description='3DPM evaluation')
+    parser.add_argument('--architecture', default="resnext", type=str, help='architecture - efficient | resnext | densenet')
+    parser.add_argument('--description', default="fine_tune", type=str, help='experiment name | description')
+    parser.add_argument('--data_path', default="none", type=str, help=' path for data of specifc fold - Fold 0|1|2|3|4 ')
+    parser.add_argument('--result_path', default="none", type=str, help=' result path to store results file ')
+    parser.add_argument('--split', default="test", type=str, help=' data split part - train | test | validation')
+    parser.add_argument('--model_file_path', default ="imagenet", type=str, help=' provide trained model path for weights')
+    parser.add_argument('--machine', default=7, type=int, help='define gpu no.')
+    args = parser.parse_args()
+
     
     test_trained_model(
-        eval_result_path = mbv_config.evaluation_path_supervised,
-        fold_root=mbv_config.data_path_fold0, 
-        dataset_portion=mbv_config.test, 
-        model_name=mbv_config.DenseNet_121, 
-        pretrained_weights_file_path='/home/prachh/mbv/src/results/MBV_<class \'models.Densenet_Model\'>_V3_224_224_1e-05_7_Classes_Combined_Images_Fold0/_82_0.49678096175193787.pth'
+        eval_result_path = args.result_path,
+        fold_root=args.data_path, 
+        dataset_portion=args.split, 
+        model_name=args.architecture, 
+        pretrained_weights_file_path= args.model_file_path,
+        device = torch.device(f"cuda:{args.machine}")
     )
 
     
