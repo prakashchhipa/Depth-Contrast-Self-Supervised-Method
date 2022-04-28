@@ -1,5 +1,5 @@
 # Depth-Contrast-Self-Supervised-Method
-Implementation for Dpeth Contrast pretrqaining method for multi sensor images using depth maps. code also includes supervised finutung and evaluation.
+Implementation for Dpeth Contrast pretraining method for multi sensor images using depth maps. code also includes supervised finutung and evaluation.
 
 
 
