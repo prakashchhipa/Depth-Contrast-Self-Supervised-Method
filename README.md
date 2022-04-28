@@ -1,1 +1,23 @@
 # Depth-Contrast-Self-Supervised-Method
+Implementation for Dpeth Contrast pretrqaining method for multi sensor images using depth maps. code also includes supervised finutung and evaluation.
+
+
+
+# Commands
+
+**Self-supervised pretraining (Assuming in directory 'src') - check all paramters in py file - all default paramters are set** 
+
+```python -m self_supervised.experiments.main_pretrain_depth_contrast --data_path <'train_data_fold_path of 3DPM dataset'> --LR <learning_rate - 0.00005> --epochs <300> --description <'experiment_name'>```
+
+
+**Fintuning/linear evaluation training for Efficient-net b2 on 3DPM dataset wit hdifferent data portion and pretrained model weights (Assuming in directory 'src')**
+
+```python -m experiments.train_efficientnet --data_path <'data_fold_path of 3DPM dataset - includes train and validation part both'> --LR <learning_rate - 0.00001> --epochs <100> --description <'experiment_name'>  --pretrained_model_path <pretrained moodel path for depth contrast trained model> --data_portion <data portion - 20 or 60> --LE <True| False - give False for full fintnuing>```
+
+**Fintuning using MPCS pretrained Efficient-net b2 on BreakHis (Assuming in directory 'src')**
+
+```python -m experiments.train_common --data_path <'data_fold_path of 3DPM dataset - includes train and validation part both'> --LR <learning_rate - 0.00001> --epochs <100> --description <'experiment_name'>  --architecture <resnext | densenet>```
+
+**Evaluation**
+
+```python - m test.test_and_save_results --data_path <'data_fold_path of 3DPM dataset - includes train and validation part both'> --architecture <resnext | densenet | efficient> --split <train | test| val> --model_file_path <path for trained model's weights>```
