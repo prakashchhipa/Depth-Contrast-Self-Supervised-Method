@@ -1,10 +1,11 @@
 # Depth-Contrast-Self-Supervised-Method
-Implementation for "Depth Contrast: Self-Supervised Pretraining on 3DPM Images for Mining Material Classification". Code also includes supervised finutung and evaluation.
+Source code for "Depth Contrast: Self-Supervised Pretraining on 3DPM Images for Mining Material Classification" - ***Accpeted in ECCV Workshop 2022, Tel Aviv***
+
 
 
 
 # Commands
-
+Code also includes supervised finutung and evaluation.
 **Self-supervised pretraining (Assuming in directory 'src') - check all paramters in py file - all default paramters are set** 
 
 ```python -m self_supervised.experiments.main_pretrain_depth_contrast --data_path <'train_data_fold_path of 3DPM dataset'> --LR <learning_rate - 0.00005> --epochs <300> --description <'experiment_name'>```
