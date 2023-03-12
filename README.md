@@ -1,7 +1,7 @@
 # Depth-Contrast-Self-Supervised-Method
 Source code for [Depth Contrast: Self-Supervised Pretraining on 3DPM Images for Mining Material Classification](https://arxiv.org/abs/2210.10633) - ***Accpeted in ECCV Workshop 2022, Tel Aviv***
 
-
+Chhipa, P. C., Upadhyay, R., Saini, R., Lindqvist, L., Nordenskjold, R., Uchida, S., & Liwicki, M. (2023, February). Depth Contrast: Self-supervised Pretraining on 3DPM Images for Mining Material Classification. In Computer Vision–ECCV 2022 Workshops: Tel Aviv, Israel, October 23–27, 2022, Proceedings, Part VII (pp. 212-227). Cham: Springer Nature Switzerland.
 
 
 # Commands
