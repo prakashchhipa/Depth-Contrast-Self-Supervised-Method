@@ -4,7 +4,7 @@
 
 # Venue
 
-Accpeted in ECCV Workshop 2022, Tel Aviv.
+Accpeted in European Conference on Computer Vision Workshop(ECCVW 2022), Tel Aviv.
 
 Chhipa, P. C., Upadhyay, R., Saini, R., Lindqvist, L., Nordenskjold, R., Uchida, S., & Liwicki, M. (2023, February). Depth Contrast: Self-supervised Pretraining on 3DPM Images for Mining Material Classification. In Computer Vision–ECCV 2022 Workshops: Tel Aviv, Israel, October 23–27, 2022, Proceedings, Part VII (pp. 212-227). Cham: Springer Nature Switzerland.
 
