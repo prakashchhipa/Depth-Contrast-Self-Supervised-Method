@@ -2,17 +2,24 @@
 
 Depth Contrast: Self-Supervised Pretraining on 3DPM Images for Mining Material Classification
 
+# Venue
+
+Accpeted in European Conference on Computer Vision Workshop(ECCVW 2022), Tel Aviv.
+
+Chhipa, P. C., Upadhyay, R., Saini, R., Lindqvist, L., Nordenskjold, R., Uchida, S., & Liwicki, M. (2023, February). Depth Contrast: Self-supervised Pretraining on 3DPM Images for Mining Material Classification. In Computer Vision–ECCV 2022 Workshops: Tel Aviv, Israel, October 23–27, 2022, Proceedings, Part VII (pp. 212-227). Cham: Springer Nature Switzerland.
+
 # Article
 
 [Springer-Link (required acess)](https://link.springer.com/chapter/10.1007/978-3-031-25082-8_14)
 
 [Arxiv Version](https://arxiv.org/abs/2210.10633)
 
-# Venue
+# Poster
 
-Accpeted in European Conference on Computer Vision Workshop(ECCVW 2022), Tel Aviv.
-
-Chhipa, P. C., Upadhyay, R., Saini, R., Lindqvist, L., Nordenskjold, R., Uchida, S., & Liwicki, M. (2023, February). Depth Contrast: Self-supervised Pretraining on 3DPM Images for Mining Material Classification. In Computer Vision–ECCV 2022 Workshops: Tel Aviv, Israel, October 23–27, 2022, Proceedings, Part VII (pp. 212-227). Cham: Springer Nature Switzerland.
+Click [here](https://drive.google.com/file/d/1Qd0SleWNdOgS4_uQ71duRKcY1ZkY1pGM/view?usp=share_link) for enlarged view
+<p align="center">
+  <img src="https://github.com/prakashchhipa/Depth-Contrast-Self-Supervised-Method/blob/main/figures/dataset.PNG">
+</p>
 
 # Abstract
 This work presents a novel self-supervised representation learning method to learn efficient representations without labels on images from a 3DPM sensor (3-Dimensional Particle Measurement; estimates the particle size distribution of material) utilizing RGB images and depth maps of mining material on the conveyor belt. Human annotations for material categories on sensor-generated data are scarce and cost-intensive. Currently, representation learning without human annotations remains unexplored for mining materials and does not leverage on utilization of sensor-generated data. The proposed method, Depth Contrast, enables self-supervised learning of representations without labels on the 3DPM dataset by exploiting depth maps and inductive transfer. The proposed method outperforms material classification over ImageNet transfer learning performance in fully supervised learning settings and achieves an F1 score of 0.73. Further, The proposed method yields an F1 score of 0.65 with an 11% improvement over ImageNet transfer learning performance in a semi-supervised setting when only 20% of labels are used in fine-tuning. Finally, the Proposed method showcases improved performance generalization on linear evaluation.
