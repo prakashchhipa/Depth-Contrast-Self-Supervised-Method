@@ -2,6 +2,8 @@
 
 [Depth Contrast: Self-Supervised Pretraining on 3DPM Images for Mining Material Classification](https://arxiv.org/abs/2210.10633)
 
+Official version (Required Springer Access) - [Link](https://link.springer.com/chapter/10.1007/978-3-031-25082-8_14)
+
 # Venue
 
 Accpeted in European Conference on Computer Vision Workshop(ECCVW 2022), Tel Aviv.
