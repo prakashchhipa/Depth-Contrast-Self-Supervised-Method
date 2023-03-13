@@ -10,14 +10,14 @@ Chhipa, P. C., Upadhyay, R., Saini, R., Lindqvist, L., Nordenskjold, R., Uchida,
 
 # Article
 
-[Springer-Link (required acess)](https://link.springer.com/chapter/10.1007/978-3-031-25082-8_14)
+[Springer-Link (required access)](https://link.springer.com/chapter/10.1007/978-3-031-25082-8_14)
 
 [Arxiv Version](https://arxiv.org/abs/2210.10633)
 
 # Poster
 
 Click [here](https://drive.google.com/file/d/1Qd0SleWNdOgS4_uQ71duRKcY1ZkY1pGM/view?usp=share_link) for enlarged view
-<p align="center">
+<p align="center" height= 400, width=600>
   <img src="https://github.com/prakashchhipa/Depth-Contrast-Self-Supervised-Method/blob/main/figures/poster.PNG">
 </p>
 
