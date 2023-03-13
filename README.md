@@ -17,8 +17,8 @@ Chhipa, P. C., Upadhyay, R., Saini, R., Lindqvist, L., Nordenskjold, R., Uchida,
 # Poster
 
 Click [here](https://drive.google.com/file/d/1Qd0SleWNdOgS4_uQ71duRKcY1ZkY1pGM/view?usp=share_link) for enlarged view
-<p align="center" height= "300", width="400">
-  <img src="https://github.com/prakashchhipa/Depth-Contrast-Self-Supervised-Method/blob/main/figures/poster.PNG">
+<p align="center">
+  <img src="https://github.com/prakashchhipa/Depth-Contrast-Self-Supervised-Method/blob/main/figures/poster.PNG" height= 60% width=80%>
 </p>
 
 # Abstract
